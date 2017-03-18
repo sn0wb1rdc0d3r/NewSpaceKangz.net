@@ -2,3 +2,14 @@ img.logo {
   height: 50px;
   width: auto;
 }
+.flex-container {
+  display: flex;
+  flex-direction: row;  
+  align-items: center; 
+}
+.flex-right {
+  margin-left: auto;
+}
+.flex-left {
+  justify-content: flex-start;
+}
