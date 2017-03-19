@@ -1,3 +1,7 @@
+body {
+  height: 100vh;
+}
+
 img.logo {
   height: 50px;
   width: auto;
