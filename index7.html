@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Test google Map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/w3-colors-camo.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<body class="w3-camo-sandstone">
+<style>
+       #GoogleMap {
+        height: 400px;
+        width: 100%;
+       }
+</style>
+  <div w3-include-html="nav5.html"></div>
+
+  <div class="w3-container" style="margin-top:120px;">
+    <div class="w3-row-padding"> 
+      <div class="w3-col m6">
+        <div id="GoogleMap" class="w3-round w3-card-8"></div>
+      </div>
+      <div class="w3-col m6">
+        <div w3-include-html="contact.html"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="assets/js/jquery.min.js"></script> 
+<script src="assets/js/w3.js"></script>
+<script>
+  w3.includeHTML();
+</script>
+<script src="assets/js/script.js"></script>
+<script>
+  function initMap() {
+        var HaightAshbury = {lat: 37.770015, lng: -122.446937};
+        var map = new google.maps.Map(document.getElementById('GoogleMap'), {
+          zoom: 12,
+          center: HaightAshbury
+        });
+        var marker = new google.maps.Marker({
+          position: HaightAshbury,
+          map: map
+        });
+}
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5yG6eHv5gpi0e-87NseniMjwXw2Yt2v0&callback=initMap">
+</script>
+</body>
+</html>
