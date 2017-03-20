@@ -1,0 +1,25 @@
+<style>
+       #GoogleMap {
+        height: 400px;
+        width: 100%;
+       }
+</style>
+
+  <div id="GoogleMap" class="w3-round w3-card-8"></div>
+    
+<script>
+  function initMap() {
+        var HaightAshbury = {lat: 37.770015, lng: -122.446937};
+        var map = new google.maps.Map(document.getElementById('GoogleMap'), {
+          zoom: 12,
+          center: HaightAshbury
+        });
+        var marker = new google.maps.Marker({
+          position: HaightAshbury,
+          map: map
+        });
+}
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5yG6eHv5gpi0e-87NseniMjwXw2Yt2v0&callback=initMap">
+</script>
