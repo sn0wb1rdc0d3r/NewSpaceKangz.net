@@ -9,4 +9,14 @@ function initMap() {
           map: map
         });
 }
+$(document).ready(initMap);
 
+
+// function handleFooBar(){
+// 	var name = null;
+// 	$('#btnFoo').click(function(event) {
+//   	name = $('#txtFoo').val();
+//     $('#divBar').text('foobar ' + name)
+//   })
+//  }
+// $(document).ready(handleFooBar);
