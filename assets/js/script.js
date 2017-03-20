@@ -1,6 +1,6 @@
 function initMap() {
         var HaightAshbury = {lat: 37.770015, lng: -122.446937};
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new google.maps.Map(document.getElementById('GoogleMap'), {
           zoom: 12,
           center: HaightAshbury
         });
