@@ -1,3 +1,13 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   height: 100vh;
 }
@@ -6,17 +16,25 @@ img.logo {
   height: 50px;
   width: auto;
 }
-.flex-container {
-  display: flex;
-  flex-direction: row;  
+
+/*flex*/
+.flex {
+  display: flex; 
   align-items: center; 
 }
-.flex-right {
-  margin-left: auto;
+
+.flex-flox-row-wrap {
+  flex-flow: row wrap; 
 }
-.flex-left {
-  justify-content: flex-start;
+
+.flex-justify-content-center {
+  justify-content: center;
 }
+
+.flex-item-left {
+   margin-right: auto;
+}
+
  #GoogleMap {
         height: 405px;
         width: 100%;
