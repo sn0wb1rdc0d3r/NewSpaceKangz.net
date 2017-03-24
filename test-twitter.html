@@ -7,9 +7,28 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-camo.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <body class="w3-camo-sandstone">
+
+  <nav id="topnav" class="w3-top" style="height:52px;">
+    <div class="w3-bar w3-camo-forest flex ">
+        <a href="#home" class="w3-bar-item flex-item-left" onclick="w3.removeClass('#dropdown',' w3-show')">
+          <p class=" w3-round-xlarge w3-hover-text-orange w3-xlarge">We Wuz Kangz</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-hover-text-orange w3-hide-small "><i class="fa fa-home w3-margin-right"></i>About</a>
+        <a href="#twitter" class="w3-bar-item w3-hover-text-orange w3-hide-small "> <i class="fa fa-twitter w3-margin-right"></i>Tweets</a>
+        <a href="#contact" class="w3-bar-item  w3-hover-text-orange w3-hide-small "> <i class="fa fa-envelope w3-margin-right"></i>Contact</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-hover-text-orange w3-xlarge w3-right w3-hide-large w3-hide-medium  " onclick="w3.toggleClass('#dropdown', ' w3-show',' ')">&#9776;</a>
+    </div>
+  </nav>
+
+  <div id="dropdown" class="w3-sidebar w3-bar-block w3-card-4 w3-camo-forest w3-hide w3-hide-large w3-hide-medium w3-section w3-margin-top w3-animate-right" style="right:0;top:52px">
+    <a href="#about" class="w3-bar-item w3-btn w3-hover-text-orange w3-margin-top w3-margin-bottom" onclick="w3.toggleClass('#dropdown', ' w3-show',' ')"><i class="fa fa-home w3-margin-right"></i>About</a>
+    <a href="#twitter" class="w3-bar-item w3-btn w3-hover-text-orange w3-margin-bottom w3-margin-right" onclick="w3.toggleClass('#dropdown', ' w3-show',' ')"> <i class="fa fa-twitter w3-hover-text-light-blue w3-margin-right" onclick="w3.hide('#dropdown')"></i>Tweets</a>
+    <a href="#contact" class="w3-bar-item w3-btn w3-hover-text-orange w3-margin-bottom"  onclick="w3.toggleClass('#dropdown', ' w3-show',' ')"> <i class="fa fa-envelope w3-margin-right"></i>Contact</a>
+  </div>
 <article id="twitter" class="w3-camo-dark-greyw3-panel w3-card-12 w3-padding-48 w3-round-xlarge flex flex-flox-row-wrap flex-justify-content-center">           
     <a class="twitter-timeline" data-lang="en" data-width="350" data-height="450" data-theme="dark" href="https://twitter.com/g0d_Emp3ror/likes">Tweets Liked by @g0d_Emp3ror</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </article>
+
 <script src="assets/js/w3.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
