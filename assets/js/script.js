@@ -20,9 +20,12 @@ function handleScrollOpacity() {
 
   function myFunction() {
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          // w3.addClass('#topnav', 'w3-animate-opacity');
           w3.addClass('#topnav', 'w3-opacity');
+          slideUp
       } else {           
            w3.removeClass('#topnav','w3-opacity');
+          //  w3.removeClass('#topnav','w3-animate-opacity');
       }
   }
 }
